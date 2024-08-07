@@ -1,0 +1,35 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": "> 0.25%, not dead"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "env": {
+    "cjs": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "minify",
+          {
+            "removeDebugger": true
+          }
+        ]
+      ],
+      "comments": false
+    }
+  }
+}
