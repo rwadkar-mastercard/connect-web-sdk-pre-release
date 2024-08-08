@@ -228,7 +228,9 @@ var Connect = {
     targetWindow == null ? void 0 : targetWindow.postMessage(data, connectUrl);
   }
 };
+var src_default = Connect;
 export {
-  Connect
+  Connect,
+  src_default as default
 };
 //# sourceMappingURL=index.js.map

@@ -56,4 +56,4 @@ interface Connect {
     postMessage: (event: any) => void;
 }
 export declare const Connect: Connect;
-export {};
+export default Connect;
